@@ -1,4 +1,4 @@
-import { CarouselSize } from "./CarouselSize";
+import { CarouselSize } from "../Secundario/CarouselSize";
 
 export const Projects = () => {
   return (

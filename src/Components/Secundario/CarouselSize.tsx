@@ -4,8 +4,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "./ui/carousel";
-import { Card, CardContent } from "./ui/card";
+} from "../ui/carousel";
+import { Card, CardContent } from "../ui/card";
 import { projectsData } from "@/assets/assets";
 
 export const CarouselSize = () => {
