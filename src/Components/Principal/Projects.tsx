@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import { CarouselSize } from "../Secundario/CarouselSize";
 
 export const Projects = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 2 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+    >
       <div
         className=" mx-auto pt-20 px-6 md:px-20 lg:px-150 my-2 w-full overflow-hidden"
         id="Projects"
@@ -18,6 +24,6 @@ export const Projects = () => {
         </p>
       </div>
       <CarouselSize />
-    </>
+    </motion.div>
   );
 };

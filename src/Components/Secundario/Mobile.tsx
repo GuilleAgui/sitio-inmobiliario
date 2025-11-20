@@ -5,7 +5,13 @@ import { useMenuMobile } from "../../hooks/useMenuMobile";
 export const Mobile = () => {
   const { menuMobile, setMenuMobile } = useMenuMobile();
   return (
-    <div>
+    <div className="flex justify-end">
+      <img
+        src={assets.menu_icon}
+        className="md:hidden w-7 cursor-pointer transition ease-in-out translate-y-[-50px]"
+        alt="open menuMobile"
+        onClick={() => setMenuMobile(true)}
+      />
       <div
         className={`md:hidden ${
           menuMobile ? "fixed w-full" : "h-0 w-0"
@@ -30,6 +36,7 @@ export const Mobile = () => {
           </Link>
           <Link
             to="About"
+            offset={-80}
             onClick={() => setMenuMobile(false)}
             href="About"
             className="px-4 py-2 rounded-full inline-block "
