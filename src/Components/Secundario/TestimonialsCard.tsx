@@ -11,7 +11,7 @@ import { assets, testimonialsData } from "@/assets/assets";
 
 export const TestimonialsCard = () => {
   return (
-    <div className=" grid md:grid-col-2 lg:grid-cols-3 gap-8 ">
+    <div className=" grid md:grid-col-2 lg:grid-cols-3 gap-8 m-6">
       {testimonialsData.map((testimonials, index) => (
         <Card className=" shaow-lg rounded">
           <CardHeader

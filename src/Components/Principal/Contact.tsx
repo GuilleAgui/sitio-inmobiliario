@@ -61,7 +61,7 @@ export const Contact = () => {
         </CardHeader>
         <CardContent>
           <form onSubmit={onSubmit}>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-50">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-50 lg:gap-50">
               <div className=" gap-2 m-auto">
                 <Label htmlFor="" className="mb-2">
                   Sus Datos
@@ -72,7 +72,7 @@ export const Contact = () => {
                   type="text"
                   placeholder="Nombre y apellido"
                   required
-                  className="lg:w-70 "
+                  className="md:w-70 lg:w-70 "
                 />
               </div>
               <div className="m-auto gap-2">
@@ -85,7 +85,7 @@ export const Contact = () => {
                   type="email"
                   placeholder="ejemplo@ejemplo.com"
                   required
-                  className="lg:w-70 "
+                  className="md:w-70 lg:w-70 "
                 />
               </div>
             </div>
