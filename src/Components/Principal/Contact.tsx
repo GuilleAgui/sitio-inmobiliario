@@ -4,7 +4,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "../ui/card";
@@ -51,18 +50,18 @@ export const Contact = () => {
       id="Contact"
       className="m-8"
     >
-      <Card className=" w-full max-w-200 shadow-gray-400 ">
-        <CardHeader className="flex flex-col items-center text-center">
-          <CardTitle className="whitespace-nowrap text-xl text-gray-700 font-medium mb-2">
+      <Card className="shadow-gray-400 ">
+        <CardHeader className="flex flex-col ml-5 mr-5 items-center text-center ">
+          <CardTitle className="whitespace-normal wrap-break-word text-xl text-gray-700 font-medium mb-2">
             Contactanos
           </CardTitle>
-          <CardDescription className="whitespace-nowrap text-gray-600 mb-6">
-            Estás a un paso más de cumplir el sueño de tu vida.
+          <CardDescription className="flex flex-col whitespace-nowrap text-gray-600 mb-6">
+            Estás a un paso más <span>de cumplir el sueño de tu vida.</span>
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={onSubmit}>
-            <div className="grid grid-col-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className=" gap-2 m-auto">
                 <Label htmlFor="" className="mb-2">
                   Sus Datos
@@ -106,7 +105,6 @@ export const Contact = () => {
             </Button>
           </form>
         </CardContent>
-        <CardFooter className="flex-col gap-2"></CardFooter>
       </Card>
     </motion.div>
   );
