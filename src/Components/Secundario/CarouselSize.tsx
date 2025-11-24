@@ -28,7 +28,7 @@ export const CarouselSize = () => {
           <CarouselItem key={index} className="m-2 md:basis-1/2 lg:basis-1/3">
             <div className="p-4">
               <Card className="pb-20">
-                <CardContent className="flex aspect-square items-center justify-center p-6">
+                <CardContent className="flex m-5 lg:m-0 aspect-square items-center justify-center p-6">
                   <span className=" text-3xl font-semibold">
                     <img src={project.image} alt={project.title} />
                     <h2 className="text-xl font-semibold text-gray-800">

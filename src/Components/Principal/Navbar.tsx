@@ -12,15 +12,15 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`top-2 left-0 w-full z-10 ease-in-out
+      className={`top-0 left-0 w-full z-10 ease-in-out
       ${fixed ? "fixed top-0" : "absolute top-5"}
       ${hidden ? "-translate-y" : "translate-y"}
       ${hasBackground ? "bg-gray-300 shadow-md" : "bg-transparent"}
     `}
     >
-      <div className="container mx-auto flex justify-between items-center py-5 px-7 md:px-0 lg:px-32 bg-transparent">
+      <div className="container mx-auto flex justify-evenly gap-8 items-center py-5 px-7 md:px-0 lg:px-32 lg:m-0 bg-transparent">
         <Link to="Header" smooth={true} duration={600} href="#Home">
-          <img src={assets.logo} alt="" className="" />
+          <img src={assets.logo} alt="logo" className="flex items-start" />
         </Link>
         <ul className="hidden md:flex gap-10">
           <Link
@@ -62,10 +62,17 @@ export const Navbar = () => {
           >
             Testimonios
           </Link>
+          <Link
+            to="Contact"
+            smooth={true}
+            duration={600}
+            offset={-80}
+            href="#Contact"
+            className="cursor-pointer hover:text-gray-500 transition ease-in-out"
+          >
+            Testimonios
+          </Link>
         </ul>
-        <button className="cursor-pointer hidden md:block bg-white px-8 py-2 rounded-full hover:bg-gray-200 transition ease-in-out">
-          Inicia Sesion
-        </button>
       </div>
       {/* --------menuMobile movil */}
       <Mobile />

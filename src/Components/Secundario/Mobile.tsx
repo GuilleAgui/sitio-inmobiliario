@@ -28,6 +28,9 @@ export const Mobile = () => {
         <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
           <Link
             to="Header"
+            smooth={true}
+            duration={600}
+            offset={-80}
             onClick={() => setMenuMobile(false)}
             href="Header"
             className="px-4 py-2 rounded-full inline-block "
@@ -36,6 +39,8 @@ export const Mobile = () => {
           </Link>
           <Link
             to="About"
+            smooth={true}
+            duration={600}
             offset={-80}
             onClick={() => setMenuMobile(false)}
             href="About"
@@ -45,6 +50,9 @@ export const Mobile = () => {
           </Link>
           <Link
             to="Projects"
+            smooth={true}
+            duration={600}
+            offset={-80}
             onClick={() => setMenuMobile(false)}
             href="Projects"
             className="px-4 py-2 rounded-full inline-block "
@@ -53,6 +61,9 @@ export const Mobile = () => {
           </Link>
           <Link
             to="Testimonials"
+            smooth={true}
+            duration={600}
+            offset={-80}
             onClick={() => setMenuMobile(false)}
             href="Testimonias"
             className="px-4 py-2 rounded-full inline-block "
