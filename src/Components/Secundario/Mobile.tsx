@@ -8,7 +8,7 @@ export const Mobile = () => {
     <div className="flex justify-end">
       <img
         src={assets.menu_icon}
-        className="md:hidden w-7 cursor-pointer transition ease-in-out translate-y-[-50px]"
+        className="md:hidden w-7 cursor-pointer transition ease-in-out translate-y-[-50px] translate-x-[-15px]"
         alt="open menuMobile"
         onClick={() => setMenuMobile(true)}
       />

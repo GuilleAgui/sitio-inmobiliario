@@ -18,7 +18,7 @@ export const Navbar = () => {
       ${hasBackground ? "bg-gray-300 shadow-md" : "bg-transparent"}
     `}
     >
-      <div className="container mx-auto flex justify-evenly gap-8 items-center py-5 px-7 md:px-0 lg:px-32 lg:m-0 bg-transparent">
+      <div className="container mx-auto flex lg:justify-evenly gap-8 items-center py-5 px-7 md:px-0 lg:px-32 lg:m-0 bg-transparent">
         <Link to="Header" smooth={true} duration={600} href="#Home">
           <img src={assets.logo} alt="logo" className="flex items-start" />
         </Link>
