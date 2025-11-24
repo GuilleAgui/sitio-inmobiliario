@@ -61,7 +61,7 @@ export const Contact = () => {
         </CardHeader>
         <CardContent>
           <form onSubmit={onSubmit}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-50">
               <div className=" gap-2 m-auto">
                 <Label htmlFor="" className="mb-2">
                   Sus Datos
@@ -72,6 +72,7 @@ export const Contact = () => {
                   type="text"
                   placeholder="Nombre y apellido"
                   required
+                  className="lg:w-70 "
                 />
               </div>
               <div className="m-auto gap-2">
@@ -84,16 +85,17 @@ export const Contact = () => {
                   type="email"
                   placeholder="ejemplo@ejemplo.com"
                   required
+                  className="lg:w-70 "
                 />
               </div>
             </div>
-            <div className="flex flex-col mt-5 gap-8 m-auto">
+            <div className="flex flex-col lg:items-start mt-5  gap-8 m-auto">
               <p>Mensaje</p>
               <textarea
                 name="Message"
                 placeholder="Escriba aqui su mensaje."
                 id="Message"
-                className="border w-full border-gray-300 rounded py-3 px-4  h-48 resize-none mb-3"
+                className="border w-full border-gray-300 rounded py-3 px-4  h-48 resize-none mb-3 "
                 required
               ></textarea>
             </div>
