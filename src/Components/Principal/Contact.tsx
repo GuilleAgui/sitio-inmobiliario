@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 
+import { BASE_KEY_URL } from "../../BASE_KEYURL";
 export const Contact = () => {
   const [result, setResult] = useState<string | null>(null);
 
@@ -21,7 +22,7 @@ export const Contact = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    formData.append("access_key", "f8a2d9bb-11ea-483e-8d8d-8f20df9c876e");
+    formData.append("access_key", BASE_KEY_URL);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
