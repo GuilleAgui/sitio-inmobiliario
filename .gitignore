@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 
-BASE_KEY_URL
+BASE_KEY_URL.ts
